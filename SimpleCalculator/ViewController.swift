@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
+    var result = 0.0
     
     
     
@@ -27,9 +28,9 @@ class ViewController: UIViewController {
 
     
     @IBAction func sumClicked(_ sender: Any) {
-        if let firstNumber = Int(firstText.text!) {
-            if let secondNumber = Int(secondText.text!){
-                let result = firstNumber + secondNumber
+        if let firstNumber = Double(firstText.text!) {
+            if let secondNumber = Double(secondText.text!){
+                 result = firstNumber + secondNumber
                 resultLabel.text = String(result)
             }
             
@@ -39,9 +40,9 @@ class ViewController: UIViewController {
     }
    
     @IBAction func minusClicked(_ sender: Any) {
-        if let firstNumber = Int(firstText.text!) {
-            if let secondNumber = Int(secondText.text!){
-                let result = firstNumber - secondNumber
+        if let firstNumber = Double(firstText.text!) {
+            if let secondNumber = Double(secondText.text!){
+                 result = firstNumber - secondNumber
                 resultLabel.text = String(result)
                 
         
@@ -55,9 +56,9 @@ class ViewController: UIViewController {
     
     @IBAction func multiplyClicked(_ sender: Any) {
         
-        if let firstNumber = Int(firstText.text!) {
-            if let secondNumber = Int(secondText.text!){
-                let result = firstNumber * secondNumber
+        if let firstNumber = Double(firstText.text!) {
+            if let secondNumber = Double(secondText.text!){
+                 result = firstNumber * secondNumber
                 resultLabel.text = String(result)
                 
             }
@@ -71,9 +72,9 @@ class ViewController: UIViewController {
     
     @IBAction func divideClicked(_ sender: Any) {
         
-        if let firstNumber = Int(firstText.text!) {
-            if let secondNumber = Int(secondText.text!){
-                let result = firstNumber / secondNumber
+        if let firstNumber = Double(firstText.text!) {
+            if let secondNumber = Double(secondText.text!){
+                 result = firstNumber / secondNumber
                 resultLabel.text = String(result)
                 
                 
@@ -86,6 +87,5 @@ class ViewController: UIViewController {
         
         
     }
-    
+ 
 }
-
